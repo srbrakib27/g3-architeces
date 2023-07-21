@@ -3,10 +3,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared section */
+
 *{
 
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Open Sans', sans-serif;
+}
+
+.nav-taitle{
+
+    color:#131313;
+   
+    font-size: 2.8rem;
+    font-weight: 700;
+
 }
 
 .btn-prymari{
@@ -23,6 +34,16 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
+.banner-discription{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #727272;
+
+}
+
+/* shard end */
+
+
 
 /* header */
 header{
@@ -42,14 +63,7 @@ nav > ul{
     display: flex;
     gap: 50px;
 }
-.nav-taitle{
 
-    color:#131313;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 700;
-
-}
 nav li{
 
 
@@ -69,19 +83,13 @@ nav li{
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
-
 }
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-discription{
-    font-size: 1rem;
-    font-weight: 400;
-    color: #727272;
 
-}
 
 
 /* future section */
@@ -133,6 +141,76 @@ main{
     font-weight: 700;
 }
 
+
+
+/* Some Facts */
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+
+
+}
+
+.card{
+padding: 20px 40px;
+margin-top: 40px;
+}
+.card-stats{
+
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    padding-top: 5px; 
+}
+.card-title{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Sponspors */
+
+
+.Sponspors{
+    text-align: center;
+  
+}
+.sponspors-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+   
+}
+
+.Sponspors h3{
+
+    color:  #131313;
+    font-size: 45px;
+    font-weight: 700;
+
+
+}
+
+.sponspors .sponspors-img {
+    width: 150px;
+   
+
+}
+
+
+
+
+
+
 /* header responsive */
 
 /* mobile */
@@ -143,26 +221,34 @@ main{
         padding: 50px;
     }
     nav,
-    .futute-container
+    .futute-container,
+    .card-container,
+    .sponspors-img
     {
         flex-direction: column;
     }
     .future-img{
         grid-template-columns: 1fr;
     }
-    .future-text-contain{
+    .future-text-contain,
+    .card-container{
         padding-right: 20px;
         padding-left: 20px;
     }
+    .card-container{
+       gap: 20px;
+    }
+    
 }
-
 /* tablet */
 @media screen and (min-width: 576px) and (max-width: 960px){
 
     header{
         padding: 20px;
     }
-    nav,.futute-container
+    nav,
+    .futute-container,
+    .sponspors-img
     {
         flex-direction: column;
     }
