@@ -295,7 +295,8 @@ footer{
     nav,
     .futute-container,
     .card-container,
-    .sponspors-img
+    .sponspors-img,
+    .love-head-containar
     {
         flex-direction: column;
     }
@@ -310,6 +311,15 @@ footer{
     .card-container{
        gap: 20px;
     }
+    .love-img img{
+        width: 90%;
+        margin-left: 0;
+    }
+    .yerar{
+        position: static;
+        width: 300px;
+
+    }
     
 }
 /* tablet */
@@ -320,7 +330,8 @@ footer{
     }
     nav,
     .futute-container,
-    .sponspors-img
+    .sponspors-img,
+    .love-head-containar
     {
         flex-direction: column;
     }
